@@ -31,6 +31,7 @@ p {
   font-size: 16px;
   line-height: 30px;
 }
+
 .hero {
   background-color: var(--secondary-color);
   text-align: center;
@@ -69,20 +70,29 @@ p {
 .project-description {
   padding: 120px 60px;
 }
-.about-section {
+.content-container {
   padding: 160px 20px;
 }
-.about-section h1 {
-  font-size: 64px;
-  line-height: 1.5;
+.content {
+  margin: 30px;
 }
-.about-section h2 {
+.content p {
+  font-size: 14px;
+}
+.content h1 {
+  font-size: 64px;
+  line-height: 80px;
+}
+.content btn-branding-outline h2 {
   font-size: 18px;
   font-family: var(--default-font-family);
 }
-.about-section-content {
-  margin: 30px;
+.content h3 {
+  font-size: 24px;
+  line-height: 1;
+  font-family: var(--default-font-family);
 }
+
 @media (max-width: 768px) {
   h1 {
     font-size: 47px;
@@ -104,8 +114,11 @@ p {
     padding: 0;
     text-align: center;
   }
-  .about-section {
+  .content {
     text-align: center;
     padding: 0;
   }
+}
+.profile-img {
+  max-width: 500px;
 }
