@@ -27,10 +27,12 @@
       href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@500;700&display=swap"
       rel="stylesheet"
     />
-    <script
-      src="https://kit.fontawesome.com/3f0cd08687.js"
-      crossorigin="anonymous"
-    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Monda&family=Mukta+Vaani:wght@300&family=Tajawal:wght@300;400&family=Yeseva+One&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://kit.fontawesome.com/3f0cd08687.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <nav
@@ -69,11 +71,6 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/work.html" title="Mariana's work"
-                >Work</a
-              >
-            </li>
-            <li class="nav-item">
               <a class="nav-link" href="/contact.html" title="Contact Mariana"
                 >Contact</a
               >
@@ -84,7 +81,7 @@
     </nav>
 
     <div class="hero">
-      <p>Hello, I am</p>
+    
       <h1>Mariana Birca</h1>
       <h2 class="mb-5">Front-end developer based in the UK</h2>
       <div>
@@ -93,13 +90,22 @@
         >
       </div>
     </div>
+
     <div class="container">
+      <div
+        class="technologies-box justify-content-center mb-5 d-none d-md-flex"
+      >
+        JavaScript | React | HTML | CSS | Bootstrap | Flexbox | SEO | Figma |
+        VSCode | CodeSandbox | Netlify | GitHub
+      </div>
+
       <p class="text-center m-5 h3">What I've been working on</p>
+
       <div class="row mb-5">
         <div class="col d-none d-lg-block">
           <img
             src="pictures/weatherapp.png"
-            alt="weather app image preview"
+            alt="weather app preview"
             class="img-fluid rounded"
           />
         </div>
@@ -114,7 +120,7 @@
               the next 5 days.
             </p>
             <a
-              href="https://jolly-fermi-840eed.netlify.app/"
+              href="https://weather-app-js-mb.netlify.app"
               target="_blank"
               class="btn btn-branding-outline"
             >
@@ -123,7 +129,39 @@
           </div>
         </div>
       </div>
+
       <div class="row mb-5">
+        <div class="col">
+          <div class="project-description">
+            <h2 mb-5>Dictionary Project</h2>
+            <p class="mb-4">Dictionary App coded in React</p>
+            <a
+              href="https://dictionary-app-react-mb.netlify.app"
+              target="_blank"
+              class="btn btn-branding-outline"
+            >
+              Launch
+            </a>
+          </div>
+        </div>
+
+        <div class="col d-none d-lg-block">
+          <img
+            src="pictures/dictionary.jpg"
+            alt="dictionary app preview"
+            class="img-fluid rounded"
+          />
+        </div>
+      </div>
+
+      <div class="row mb-5">
+        <div class="col d-none d-lg-block">
+          <img
+            src="pictures/reactweather.jpg"
+            alt="weather app preview"
+            class="img-fluid rounded"
+          />
+        </div>
         <div class="col">
           <div class="project-description">
             <h2 mb-5>Weather Project React</h2>
@@ -137,36 +175,8 @@
             </a>
           </div>
         </div>
-        <div class="col d-none d-lg-block">
-          <img
-            src="pictures/reactweather.jpg"
-            alt="yogurt image preview"
-            class="img-fluid rounded"
-          />
-        </div>
       </div>
-      <div class="row mb-5">
-        <div class="col d-none d-lg-block">
-          <img
-            src="pictures/dictionary.png"
-            alt="dictionary image preview"
-            class="img-fluid rounded"
-          />
-        </div>
-        <div class="col">
-          <div class="project-description">
-            <h2 mb-5>Dictionary Project</h2>
-            <p class="mb-4">Coming soon</p>
-            <a
-              href="/work.html"
-              target="_blank"
-              class="btn btn-branding-outline"
-            >
-              Launch
-            </a>
-          </div>
-        </div>
-      </div>
+
       <footer>
         <div class="contact-box justify-content-between mb-5 d-none d-md-flex">
           <div>
@@ -183,15 +193,16 @@
           </div>
         </div>
 
-        <div class="d-flex justify-content-center mb-5">
+        <div class="social-links d-flex justify-content-center mb-5">
           <a
             href="mailto:mariannabirca@gmail.com"
             class="email-link"
             title="Email Mariana"
-            >mariannabirca@gmail.com</a
           >
-        </div>
-        <div class="social-links d-flex justify-content-center mb-5">
+          <i class="fa-solid fa-envelope"></i>
+        </i>
+          </a>
+
           <a
             href="https://github.com/MarianaBirca"
             target="_blank"
@@ -206,14 +217,15 @@
           >
             <i class="fab fa-linkedin"></i
           ></a>
-          <a href="https://www.facebook.com/mariannabirca/" target="_blank">
-            <i class="fab fa-facebook" title="Facebook profile"></i
-          ></a>
         </div>
         <p class="text-center mt-5">
-          This project was coded by Mariana and it is
-          <a href="https://github.com/MarianaBirca" target="_blank">
-            open-sourced
+          Coded by Mariana Birca, open-sourced on
+          <a
+            href="https://github.com/MarianaBirca"
+            class="github-link"
+            target="_blank"
+          >
+            GitHub
           </a>
         </p>
       </footer>
